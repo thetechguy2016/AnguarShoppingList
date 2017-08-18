@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+
+  baseUrl: string = 'recipe';
+
+  getUrl(url: string) {
+    this.baseUrl = url;
+    console.log('APP-Component:' + url);
+  }
+
 }
